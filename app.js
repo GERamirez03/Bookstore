@@ -26,7 +26,7 @@ app.use(function(err, req, res, next) {
 
   return res.json({
     error: err,
-    message: err.message
+    // message: err.message <-- commented out to avoid duplicate error messaging!
   });
 });
 
